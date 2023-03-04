@@ -17,4 +17,5 @@
       
   
 2)Hardware:
-  -use laser to calibrate E axis 
+  - use laser to calibrate E axis
+  
