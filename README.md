@@ -7,9 +7,12 @@
   - Execute subsample.bat
   - import generated curve in Rhino, execute macro 'ccrelative0'='! SelAll  Rotate 0,0,0 -90  SelAll CurveThroughPt   Enter    Delete    SelAll CopyToClipboard  Paste smooth enter      ExtrudeCrv   3    Enter   SelAll    Mirror  copy=no  0,0,0  90,0,0    SelAll  Rotate3D  0,0,0  90,0,0  90'
   
-  - in RhinoCam: 
-      - import post processor grbl-custom-relative
+  - in RhinoCAM: 
+      - import post processor 'grbl-custom-relative.spm'
       - Machine 4 axis, table, -Y
-      
+      - import aligner.vkb in RhinoCAM
+      - generate gcode
+      - execute post-process-axis.py
+      - upload gcode to Octoprint
       
   
