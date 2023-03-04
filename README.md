@@ -16,3 +16,5 @@
       - upload gcode to Octoprint
       
   
+2)Hardware:
+  -use laser to calibrate E axis 
