@@ -3,8 +3,7 @@
 1)Software:
   - When exporting STL files in Onyxceph, add base as 3D object
   - Export trimming curve for some steps
-  - import curve in Rhino, execute macro 'onyxpts'='import SelAll ExtractPt cancel SelMesh Delete SelAll export'
-  - Execute subsample.bat
+  - Execute cc.py
   - import generated curve in Rhino, execute macro 'ccrelative0'='! SelAll  Rotate 0,0,0 -90  SelAll CurveThroughPt   Enter    Delete    SelAll CopyToClipboard  Paste smooth enter      ExtrudeCrv   3    Enter   SelAll    Mirror  copy=no  0,0,0  90,0,0    SelAll  Rotate3D  0,0,0  90,0,0  90'
   
   - in RhinoCAM: 
